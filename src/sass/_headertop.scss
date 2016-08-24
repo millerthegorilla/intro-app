@@ -1,0 +1,73 @@
+.headertop { 
+	display: flex;
+	flex-grow: 1;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	.logo {
+		display: inline-flex;
+		background-image: url('http://fillmurray.com/40/40');
+		height: 40px;
+		width: 40px;
+		margin: 6px;
+		border-radius: 50px;
+	}
+
+
+	.header-search-icon { 
+		display: flex;
+		flex-grow: 80;
+		svg { 
+		height: 60px;
+		width: 60px;
+		margin-left: 8px;
+			path { 
+
+			}
+		}
+	}
+
+	#header-input-search { 
+		border-style: none;
+		margin-left: 8px;
+	}
+	
+	.dd-menu-btn {
+		display: flex;
+		margin-left: auto;
+		margin-right: 10px;
+	}
+
+	.dd-menu { 
+		display: none;
+		
+		.dd-btns { 
+
+			.dd-menu-btn1 { 
+
+				.btn-link { 
+
+				}
+			}
+
+			.dd-menu-btn2 { 
+
+				.btn-link { 
+
+				}
+			}
+
+			.dd-menu-btn3 { 
+
+				.btn-link { 
+
+				}
+			}
+		}
+
+		.btn-login { 
+			display: flex;
+			margin-left: 10px;
+		}
+	}
+}

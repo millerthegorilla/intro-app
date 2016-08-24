@@ -1,11 +1,14 @@
 * {
   color: #ADADAD;
   list-style-type: none;
+  text-decoration: none;
   font-family: 'Montserrat', sans-serif; }
 
 .header {
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
   .header .headertop {
     display: -ms-flexbox;
     display: flex;
@@ -14,7 +17,8 @@
     -ms-flex-align: center;
         align-items: center;
     -ms-flex-pack: start;
-        justify-content: flex-start; }
+        justify-content: flex-start;
+    width: 100%; }
     .header .headertop .logo {
       display: -ms-inline-flexbox;
       display: inline-flex;
@@ -25,18 +29,49 @@
       background-image: url("http://fillmurray.com/40/40"); }
     .header .headertop .header-search-icon {
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      -ms-flex-positive: 80;
+          flex-grow: 80; }
       .header .headertop .header-search-icon svg {
+        margin-left: 8px;
         width: 60px;
-        height: 60px;
-        ml: 8px; }
+        height: 60px; }
     .header .headertop #header-input-search {
       margin-left: 8px;
       border-style: none; }
+    .header .headertop .dd-menu-btn {
+      display: -ms-flexbox;
+      display: flex;
+      margin-right: 10px;
+      margin-left: auto; }
     .header .headertop .dd-menu {
       display: none; }
+      .header .headertop .dd-menu .btn-login {
+        display: -ms-flexbox;
+        display: flex;
+        margin-left: 10px; }
   .header .headerbttm {
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -ms-flex-positive: 1;
+        flex-grow: 1;
+    width: 100%; }
+    .header .headerbttm .mainnav {
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%; }
+      .header .headerbttm .mainnav .bordertop {
+        position: absolute;
+        top: 0px;
+        right: 10px;
+        left: 10px;
+        border-top: 2px solid grey; }
+      .header .headerbttm .mainnav .main-nav-btns {
+        display: -ms-flexbox;
+        display: flex;
+        width: 10vw;
+        font-size: .85em; }
+        .header .headerbttm .mainnav .main-nav-btns .btn-link {
+          margin-left: 10px; }
 
 /*# sourceMappingURL=stylesheet.css.map */

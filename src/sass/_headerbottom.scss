@@ -1,0 +1,37 @@
+.headerbttm { 
+	display: flex;
+	width: 100%;
+	flex-grow: 1;
+	.mainnav {
+		display: flex;
+		width: 100%;
+		.bordertop {
+			border-top: 2px solid grey;
+			position: absolute;
+			left:10px;
+			right:10px;
+			top:0px;
+		}
+
+		.main-nav-btns { 
+			display: flex;
+			font-size: .85em;
+			width: 10vw;
+;			.btn-link { 
+				margin-left: 10px;		
+			}
+
+			.nav-btn1 { 
+
+			}
+
+			.nav-btn2 { 
+
+			}
+
+			.nav-btn3 { 
+
+			}
+		}
+	}
+}
