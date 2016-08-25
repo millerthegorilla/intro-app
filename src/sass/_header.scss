@@ -1,7 +1,11 @@
+$col: calc(100% / 40px);
+$local-margin-left: 8px;
+
 .header {
 	display: flex;
 	flex-wrap: wrap;
+	border-bottom: ridge 1px #DDD;
 	@import "headertop";
-	@import "headerbottom"; 
+	@import "headerbttm";
 }
 

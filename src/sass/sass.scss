@@ -1,8 +1,21 @@
+$bgd-color: #f9f9f9;
+
 * {
 	list-style-type: none;
 	text-decoration: none;
 	font-family: 'Montserrat', sans-serif;
+	font-size: .98em;
 	color: #ADADAD;
+	margin:0px;
+	padding:0px;
+}
+
+body {
+	background: $bgd-color;
+}
+
+.body-contents {
+	background: #fff;
 }
 
 @import "header";

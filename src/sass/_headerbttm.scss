@@ -1,0 +1,42 @@
+.headerbttm { 
+	display: flex;
+	justify-content: center;
+	min-width: 100%;
+
+	.header--mainnav { 
+		display: flex;
+		flex-grow: 1;
+		margin-left: 5vw;
+		margin-right: 2vw;
+		border-top: solid 1px #DDD;
+
+		.main-nav-btns {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			flex-grow: 1;
+			min-height: 5vh;
+			
+			.nav-btn {
+				align-self: center; 
+				min-width: 10vw;
+			}
+
+			.nav-btn:hover {
+				background: $bgd-color;
+			}
+
+			.nav-btn1 { 
+
+			}
+
+			.nav-btn2 { 
+
+			}
+
+			.nav-btn3 { 
+
+			}
+		}
+	}
+}
