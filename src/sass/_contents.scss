@@ -1,13 +1,33 @@
 .contents { 
+	display: flex;
+	width: 80%;
+	margin: auto;
 
-	.subscribe { 
+	.welcome { 
+		display: flex;
+		background-color: white;
+		flex-grow: 1;
+		justify-content: center;
+		align-items: center;
+		height: 6vh;
+		*{
+			margin-left: 10px;
+		}
+		.welcome--logo {
+			transform: scale(.7);
+		}
 
-		.welcome { 
+		.welcome--subscribe-msg { 
 
 		}
 
-		input { 
+		#welcome--email {
+			padding: 5px;
+			font-size: .8em;
+		}
 
+		#welcome--submit { 
+			
 		} 
 	}
 

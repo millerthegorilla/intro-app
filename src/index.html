@@ -9,8 +9,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
-<div="body-contents">
+<div class="body-contents">
 <header class="header">
+	<div class="header-inner">
 	<div class="headertop">
 		<div class="logo"></div>
 		<div class="header--search-box">
@@ -39,12 +40,17 @@
 			<div class="borderbottom"></div>
 		</nav>
 	</div>
+</div>
 </header>
+
 <section class="contents">
-	<section class="subscribe">
-		<div class="welcome"></div>
-		<input type="email" name="" id="">
-		<input type="submit" value="">
+	<section class="welcome">
+		<span class="welcome--logo" style="font-style: normal; font-weight: normal;"><img draggable="false" class="emoji" alt="👋" src="https://twemoji.maxcdn.com/36x36/1f44b.png">
+		</span>
+		<div class="welcome--subscribe-msg">Welcome to Product Hunt
+Get the best new products in your inbox, daily.</div>
+		<input type="email" name="" id="welcome--email-address" placeholder="Your email">
+		<input type="submit" value="" id="welcome--submit">SUBSCRIBE
 	</section>
 	<div class="column1">
 		<div class="row1-popular">

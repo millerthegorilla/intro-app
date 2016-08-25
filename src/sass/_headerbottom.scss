@@ -17,8 +17,12 @@
 			display: flex;
 			font-size: .85em;
 			width: 10vw;
-;			.btn-link { 
-				margin-left: 10px;		
+			.nav-btn { 
+				&:hover {
+					background-color: $bgd-color;
+				}
+				height:100%;
+				margin-left: 10px;	
 			}
 
 			.nav-btn1 { 
