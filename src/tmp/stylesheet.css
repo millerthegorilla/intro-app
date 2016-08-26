@@ -5,7 +5,7 @@
   list-style-type: none;
   text-decoration: none;
   font-size: .98em;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 body {
   height: 100vh;
@@ -80,19 +80,54 @@ body {
 
 .contents {
   display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
   margin: auto;
   width: 80%; }
   .contents .welcome {
+    position: relative;
+    top: 3vh;
     display: flex;
     flex-grow: 1;
     align-items: center;
     justify-content: center;
-    height: 6vh;
+    padding-top: 1vh;
+    padding-right: 2vw;
+    padding-bottom: 1vh;
+    padding-left: 2vw;
+    height: 8vh;
     background-color: white; }
     .contents .welcome * {
       margin-left: 10px; }
     .contents .welcome .welcome--logo {
       transform: scale(0.7); }
+    .contents .welcome .welcome--msg {
+      font: normal normal normal 1.4em bold "Montserrat", sans-serif; }
+    .contents .welcome .welcome--subscribe-msg {
+      font-style: bold;
+      font-size: 0.8em; }
     .contents .welcome #welcome--email {
       padding: 5px;
       font-size: .8em; }
+    .contents .welcome #welcome--submit {
+      padding: 4px;
+      width: 12vw;
+      border-style: none;
+      border-radius: 4px;
+      background: #DA552F; }
+      .contents .welcome #welcome--submit:hover {
+        background-color: #da7937; }
+  .contents .contents--columns {
+    position: relative;
+    top: 3vh; }
+    .contents .contents--columns .column1 {
+      display: flex;
+      flex-grow: 2;
+      margin-right: 1vw; }
+    .contents .contents--columns .column2 {
+      display: flex;
+      flex-grow: 1;
+      margin-left: 1vw; }
+      .contents .contents--columns .column2 .kitbit {
+        display: flex;
+        height: 10vh; }

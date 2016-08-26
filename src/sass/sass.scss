@@ -1,9 +1,27 @@
-$bgd-color: #f9f9f9;
+// colors
+
+$color-bgd: #f9f9f9;
+$color-submit: #DA552F;
+$color-submit-hover: #da7937;
+
+// font-families
+
+$base-font: 'Montserrat', sans-serif;
+
+// font-sizes
+
+$fs-large: 1.4em;
+$fs-small: .8em;
+
+// font-styles
+
+$fs-small-strong: normal normal normal $fs-small bold $base-font;
+$fs-large-strong: normal normal normal $fs-large bold $base-font;
 
 * {
 	list-style-type: none;
 	text-decoration: none;
-	font-family: 'Montserrat', sans-serif;
+	font-family: $base-font;
 	font-size: .98em;
 	color: #ADADAD;
 	margin:0px;
@@ -11,7 +29,7 @@ $bgd-color: #f9f9f9;
 }
 
 body {
-	background: $bgd-color;
+	background: $color-bgd;
 	height:100vh;
 }
 
@@ -19,5 +37,6 @@ body {
 	// background: #fff;
 }
 
+// imports
 @import "header";
 @import "contents";

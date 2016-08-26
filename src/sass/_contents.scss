@@ -1,24 +1,41 @@
+$row:10vh; //row height
+
 .contents { 
 	display: flex;
+	flex-wrap: wrap;
+	flex-grow: 1;
 	width: 80%;
 	margin: auto;
 
 	.welcome { 
 		display: flex;
+		position:relative;
 		background-color: white;
 		flex-grow: 1;
 		justify-content: center;
 		align-items: center;
-		height: 6vh;
+		height: 8vh;
+		top: 3vh;
+		padding-left: 2vw;
+		padding-right: 2vw;
+		padding-top: 1vh;
+		padding-bottom: 1vh;
+
 		*{
 			margin-left: 10px;
 		}
+
 		.welcome--logo {
 			transform: scale(.7);
 		}
 
-		.welcome--subscribe-msg { 
+		.welcome--msg {
+			font: $fs-large-strong;
+		}
 
+		.welcome--subscribe-msg { 
+			font-size: $fs-small;
+			font-style: bold;
 		}
 
 		#welcome--email {
@@ -27,11 +44,24 @@
 		}
 
 		#welcome--submit { 
+			background: $color-submit;
+			width: 12vw;
+			padding: 4px;
+			border-style: none;
+			border-radius: 4px;
 			
+			&:hover {
+				background-color: $color-submit-hover;
+			}
+
 		} 
 	}
-
-@import "column1";
-@import "column2";
+	
+	.contents--columns {
+		position:relative;
+		top: 3vh;
+		@import "column1";
+		@import "column2";
+	}
 
 }

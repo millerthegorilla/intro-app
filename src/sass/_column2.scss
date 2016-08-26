@@ -1,43 +1,47 @@
-	.column2 { 
+.column2 { 
+	display: flex;
+	flex-grow: 1;
+	margin-left: 1vw;
+	.kitbit { 
+		display: flex;
+		height: $row;
 		
-		.kitbit { 
+		.title { 
 
-			.title { 
-
-			}
-
-			input { 
-
-			}
 		}
 
-		.livechats { 
+		input { 
 
-			.chatitems { 
+		}
+	}
 
-				.item1 { 
+	.livechats { 
 
-				}
+		.chatitems { 
 
-				.item2 { 
+			.item1 { 
 
-				}
+			}
 
-				.item3 { 
+			.item2 { 
 
-				}
+			}
 
-				.item4 { 
+			.item3 { 
 
-				}
+			}
 
-				.item5 { 
+			.item4 { 
 
-				}
+			}
 
-				.item6 { 
+			.item5 { 
 
-				}
+			}
+
+			.item6 { 
+
 			}
 		}
 	}
+}
