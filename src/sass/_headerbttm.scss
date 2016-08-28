@@ -1,13 +1,13 @@
 .headerbttm { 
 	display: flex;
 	justify-content: center;
-	min-width: 100%;
+	width: 80%;
 
 	.header--mainnav { 
 		display: flex;
 		flex-grow: 1;
-		margin-left: 5vw;
-		margin-right: 2vw;
+		// margin-left: 5vw;
+		// margin-right: 2vw;
 		border-top: solid 1px #DDD;
 
 		.main-nav-btns {
@@ -23,6 +23,7 @@
 				justify-content: center;
 				min-width: 10vw;
 				height:100%;
+				@include font-std-normal($fs-large);
 			}
 
 			.nav-btn:hover {
@@ -30,7 +31,7 @@
 			}
 
 			.nav-btn1 { 
-
+				padding-right: $h-spacer;
 			}
 
 			.nav-btn2 { 

@@ -3,19 +3,19 @@ $row:10vh; //row height
 .contents { 
 	display: flex;
 	flex-wrap: wrap;
-	flex-grow: 1;
-	width: 80%;
+	justify-content: center;
+	flex-direction: column;
 	margin: auto;
-
+	width: 80%;
 	.welcome { 
 		display: flex;
-		position:relative;
+		flex-basis: 100%;
 		background-color: white;
 		flex-grow: 1;
+		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
 		height: 8vh;
-		top: 3vh;
 		padding-left: 2vw;
 		padding-right: 2vw;
 		padding-top: 1vh;
@@ -30,26 +30,27 @@ $row:10vh; //row height
 		}
 
 		.welcome--msg {
-			font: $fs-large-strong;
+			@include font-std-strong($fs-normal);
 		}
 
 		.welcome--subscribe-msg { 
-			font-size: $fs-small;
-			font-style: bold;
+			@include font-std-normal($fs-small);
 		}
 
 		#welcome--email {
 			padding: 5px;
-			font-size: .8em;
+			@include font-std-normal($fs-small);
 		}
 
-		#welcome--submit { 
+		#welcome--submit {
+			display: inline-flex;
 			background: $color-submit;
-			width: 12vw;
+			min-width: 8vw;
+			max-width: 8vw;
 			padding: 4px;
 			border-style: none;
 			border-radius: 4px;
-			
+			color: white;
 			&:hover {
 				background-color: $color-submit-hover;
 			}
@@ -58,8 +59,8 @@ $row:10vh; //row height
 	}
 	
 	.contents--columns {
-		position:relative;
-		top: 3vh;
+		display: flex;
+		justify-content: space-between;
 		@import "column1";
 		@import "column2";
 	}

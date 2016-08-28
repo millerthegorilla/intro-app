@@ -1,8 +1,9 @@
 // colors
 
-$color-bgd: #f9f9f9;
+$color-bgd: #F9F9F9;
 $color-submit: #DA552F;
-$color-submit-hover: #da7937;
+$color-submit-hover: #DA7937;
+$color-grey-text: #ADADAD;
 
 // font-families
 
@@ -10,19 +11,31 @@ $base-font: 'Montserrat', sans-serif;
 
 // font-sizes
 
-$fs-large: 1.4em;
-$fs-small: .8em;
+$fs-large: .9em;
+$fs-normal: .7em;
+$fs-small: .65em;
 
 // font-styles
 
-$fs-small-strong: normal normal normal $fs-small bold $base-font;
-$fs-large-strong: normal normal normal $fs-large bold $base-font;
+@mixin font-std-strong($fontsize) {
+	font-size: $fontsize;
+	font-style: bold;
+	color: black;
+}
+
+@mixin font-std-normal($fontsize) {
+	font-size: $fontsize;
+	font-style: normal;
+	color: $color-grey-text;
+}
+
+// misc variables
+
+$h-spacer: 6px;
 
 * {
 	list-style-type: none;
 	text-decoration: none;
-	font-family: $base-font;
-	font-size: .98em;
 	color: #ADADAD;
 	margin:0px;
 	padding:0px;
@@ -38,5 +51,12 @@ body {
 }
 
 // imports
+
 @import "header";
-@import "contents";
+
+.contents--container{
+	// display: flex;
+	// justify-content: center;
+	// width: 80%;
+	@import "contents";
+}
