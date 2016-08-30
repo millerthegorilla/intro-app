@@ -1,3 +1,8 @@
+@font-face{ 
+	font-family:intercom-font;
+	src:url(https://js.intercomcdn.com/fonts/proximanova-regular.ed964b0f.woff) format("woff");
+	}
+
 // colors
 
 $color-bgd: #F9F9F9;
@@ -8,12 +13,12 @@ $color-grey: #DDD;
 
 // font-families
 
-$base-font: 'Montserrat', sans-serif;
+$base-font: intercom-font, sans-serif;
 
 // font-sizes
 
-$fs-large: .9em;
-$fs-normal: .8em;
+$fs-large: 1.4em;
+$fs-normal: .9em;
 $fs-small: .8em;
 
 // font-styles
@@ -44,6 +49,7 @@ $v-p-spacer: 1vh;
 	color: #ADADAD;
 	margin:0px;
 	padding:0px;
+	font-family: $base-font;
 }
 
 body {

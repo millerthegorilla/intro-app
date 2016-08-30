@@ -14,9 +14,9 @@ $local-margin-left: 8px;
 		justify-content: center;
 		flex-grow: 1;
 		flex-wrap: wrap;
-		@import "headertop";
+		@import "./rows/headertop";
 		
-		@import "headerbttm";
+		@import "./rows/headerbttm";
 	}
 }
 

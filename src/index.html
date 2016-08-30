@@ -7,8 +7,6 @@
 	<link rel="stylesheet" href="css/stylesheet.css">
 	<link rel="shortcut icon" type="image/x-icon" href="https://assets.producthunt.com/assets/favicon-9247d7de492fd8ec2553739d3635dca4.ico">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/core.js"></script>
-	<script src="scripts/svg.js"></script>
 </head>
 <body>
 <div class="body-contents">
@@ -56,32 +54,49 @@
 	Get the best new products in your inbox, daily.</span>
 			<input type="email" name="" id="welcome--email-inp" placeholder="Your email">
 			<input type="submit" value="" id="welcome--submit-btn" value="SUBSCRIBE">
-			<img class="svg welcome--close-btn"><svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><path d="M6 4.586l4.24-4.24c.395-.395 1.026-.392 1.416-.002.393.393.39 1.024 0 1.415L7.413 6l4.24 4.24c.395.395.392 1.026.002 1.416-.393.393-1.024.39-1.415 0L6 7.413l-4.24 4.24c-.395.395-1.026.392-1.416.002-.393-.393-.39-1.024 0-1.415L4.587 6 .347 1.76C-.05 1.364-.048.733.342.343c.393-.393 1.024-.39 1.415 0L6 4.587z" fill-rule="evenodd"></path></svg></img>
+			<span class="welcome--close-btn"><svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><path class="closebtn-path" d="M6 4.586l4.24-4.24c.395-.395 1.026-.392 1.416-.002.393.393.39 1.024 0 1.415L7.413 6l4.24 4.24c.395.395.392 1.026.002 1.416-.393.393-1.024.39-1.415 0L6 7.413l-4.24 4.24c-.395.395-1.026.392-1.416.002-.393-.393-.39-1.024 0-1.415L4.587 6 .347 1.76C-.05 1.364-.048.733.342.343c.393-.393 1.024-.39 1.415 0L6 4.587z" fill-rule="evenodd"></path></svg></span>
 		</section>
 		<div class="contents--columns">
 			<div class="column1">
-				<div class="row1-popular">
-					<div class="item1"></div>
-					<div class="item2"></div>
-					<div class="item3"></div>
+				<div class="column1--title">
+					<span class="title-text">Today</span>
+					<span class="title-popnewlinks"><a class="poplink" href="#">POPULAR</a><a class="newlink" href="#"> NEWEST</a></span>
 				</div>
-				<div class="row2-today">
-					<div class="item1"></div>
-					<div class="item2"></div>
-					<div class="item3"></div>
+				<div class="column1--rows">
+					<div class="column1--row1 column1--row">
+						<img src="http://fillmurray.com/150/150" alt="product1" class="product-image">
+						<div class="description"><span class="title">Item 1</span><br><span class="details">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</span></div>
+					</div>
+					<div class="column1--row2 column1--row">
+						<img src="http://fillmurray.com/150/150" alt="product1" class="product-image">
+						<div class="description"><span class="title">Item 1</span><br><span class="details">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</span></div>
+					</div>
+					<div class="column1--row3 column1--row">
+						<img src="http://fillmurray.com/150/150" alt="product1" class="product-image">
+						<div class="description"><span class="title">Item 1</span><br><span class="details">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</span></div>
+					</div>
 				</div>
 			</div>
 			<div class="column2">
-				<div class="kitbit"><span class="title"></span><input type="submit" value=""></div>
-				<div class="livechats">
-					<ul class="chatitems">
-						<li class="item1"></li>
-						<li class="item2"></li>
-						<li class="item3"></li>
-						<li class="item4"></li>
-						<li class="item5"></li>
-						<li class="item6"></li>
-					</ul>
+				<div class="kitbit">
+					<span class="title">Product Hunt for IOS</span>
+					<span class="kitbit--close-btn"><svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><path class="closebtn-path" d="M6 4.586l4.24-4.24c.395-.395 1.026-.392 1.416-.002.393.393.39 1.024 0 1.415L7.413 6l4.24 4.24c.395.395.392 1.026.002 1.416-.393.393-1.024.39-1.415 0L6 7.413l-4.24 4.24c-.395.395-1.026.392-1.416.002-.393-.393-.39-1.024 0-1.415L4.587 6 .347 1.76C-.05 1.364-.048.733.342.343c.393-.393 1.024-.39 1.415 0L6 4.587z" fill-rule="evenodd"></path></svg></span>
+					<span class="description">Check out the day's top hunts from your pocket device.</span>
+					<div class="apple-submit-btn"><a href="https://itunes.apple.com/us/app/product-hunt-best-new-products/	id904658671" target="_blank"><img height="40" src="https://s3.producthunt.com/static/download-from-app-store.svg" alt="apple store button"></a>
+					</div>
+					<div class="livechats">
+						<ul class="chatitems">
+							<li class="item1"></li>
+							<li class="item2"></li>
+							<li class="item3"></li>
+							<li class="item4"></li>
+							<li class="item5"></li>
+							<li class="item6"></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>

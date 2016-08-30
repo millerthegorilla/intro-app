@@ -91,7 +91,7 @@ gulp.task("scripts", function() {
 
 gulp.task("build", ["scripts", "browser-sync"], function() {
     gulp.watch(["./src/*.html", "./src/**/*.html"], ['html-tidy']);
-    gulp.watch('./src/sass/**', ['sass']);
+    gulp.watch('./src/sass/**/**', ['sass']);
     var watcher = gulp.watch(['./src/tmp/*.css','./src/tmp/**/*.css'], ['css-minify']);
     watcher.on('change', function(event) {  console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
     });

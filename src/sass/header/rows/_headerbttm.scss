@@ -10,8 +10,6 @@
 
 		.main-nav-btns {
 			display: flex;
-			// justify-content: flex-start;
-			// align-items: center;
 			flex-grow: 1;
 			min-height: 6vh;
 			
@@ -21,7 +19,7 @@
 				justify-content: center;
 				min-width: 5vw;
 				height:100%;
-				@include font-std-normal($fs-large);
+				@include font-std-normal($fs-normal);
 				&:hover {
 					background: $color-bgd;
 				}

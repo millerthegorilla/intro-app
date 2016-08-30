@@ -1,9 +1,14 @@
+@font-face {
+  font-family: intercom-font;
+  src: url(https://js.intercomcdn.com/fonts/proximanova-regular.ed964b0f.woff) format("woff"); }
+
 * {
   margin: 0px;
   padding: 0px;
   color: #ADADAD;
   list-style-type: none;
-  text-decoration: none; }
+  text-decoration: none;
+  font-family: intercom-font, sans-serif; }
 
 body {
   height: 100vh;
@@ -106,12 +111,13 @@ body {
     width: 80%;
     background-color: white; }
     .contents--container .contents .welcome .welcome--logo {
+      margin-left: auto;
       transform: scale(0.7); }
     .contents--container .contents .welcome .welcome--msg {
       margin-left: 0.4vw;
       color: black;
       font-style: bold;
-      font-size: 0.8em; }
+      font-size: 0.9em; }
     .contents--container .contents .welcome .welcome--subscribe-msg {
       margin-left: 0.4vw;
       color: color-grey-text;
@@ -134,34 +140,100 @@ body {
       color: white;
       color: white;
       font-style: normal;
-      font-size: 0.8em;
+      font-size: 0.9em;
       cursor: pointer; }
       .contents--container .contents .welcome #welcome--submit-btn:hover {
         background-color: #DA7937; }
     .contents--container .contents .welcome .welcome--close-btn {
-      position: relative;
-      flex-direction: column;
-      margin-top: 30px;
-      padding: 15px 0;
-      text-align: center; }
-      .contents--container .contents .welcome .welcome--close-btn .svg {
-        color: #DDD; }
+      display: block;
+      margin-left: auto;
+      padding-right: 0.4vw;
+      padding-bottom: 1vw; }
+      .contents--container .contents .welcome .welcome--close-btn svg:hover .closebtn-path {
+        fill: black; }
+      .contents--container .contents .welcome .welcome--close-btn svg .closebtn-path {
+        fill: #ADADAD; }
   .contents--container .contents .contents--columns {
     display: flex;
     flex-grow: 1;
     align-items: center;
     justify-content: flex-start;
     margin-top: 4vh;
-    width: 100%; }
+    width: 80%; }
     .contents--container .contents .contents--columns .column1 {
       display: flex;
       flex-grow: 3;
+      flex-wrap: wrap;
+      justify-content: center;
       margin-right: 1vw;
-      height: 10vh; }
+      background-color: #fff; }
+      .contents--container .contents .contents--columns .column1 .column1--title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        width: 90%;
+        border-bottom: 1px solid #DDD; }
+        .contents--container .contents .contents--columns .column1 .column1--title .title-text {
+          display: flex;
+          color: black;
+          font-style: normal;
+          font-size: 1.1em; }
+        .contents--container .contents .contents--columns .column1 .column1--title .title-popnewlinks {
+          display: flex;
+          color: black;
+          font-style: normal;
+          font-size: 0.7em; }
+          .contents--container .contents .contents--columns .column1 .column1--title .title-popnewlinks .poplink {
+            margin-right: 10px; }
+            .contents--container .contents .contents--columns .column1 .column1--title .title-popnewlinks .poplink:hover {
+              color: black; }
+          .contents--container .contents .contents--columns .column1 .column1--title .title-popnewlinks .newlink:hover {
+            color: black; }
+      .contents--container .contents .contents--columns .column1 .column1--rows {
+        display: flex;
+        flex-grow: 1;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        align-items: space-between;
+        margin: 4vh;
+        margin-top: 0px; }
+        .contents--container .contents .contents--columns .column1 .column1--rows .column1--row {
+          display: flex;
+          margin-top: 4vh;
+          padding-bottom: 4vh;
+          width: 100%;
+          border-bottom: 1px solid #DDD;
+          background-color: #fff; }
+          .contents--container .contents .contents--columns .column1 .column1--rows .column1--row .product-image {
+            width: 50px;
+            height: 50px; }
+          .contents--container .contents .contents--columns .column1 .column1--rows .column1--row .description {
+            margin-left: 1vw; }
+          .contents--container .contents .contents--columns .column1 .column1--rows .column1--row .title {
+            color: color-grey-text;
+            font-style: normal;
+            font-size: 1.4em; }
+          .contents--container .contents .contents--columns .column1 .column1--rows .column1--row .details {
+            color: color-grey-text;
+            font-style: normal;
+            font-size: 0.9em; }
+        .contents--container .contents .contents--columns .column1 .column1--rows .column1-row1 {
+          margin-top: 1vh; }
     .contents--container .contents .contents--columns .column2 {
       display: flex;
       flex-grow: 1;
-      margin-left: 1vw; }
+      flex-wrap: wrap; }
       .contents--container .contents .contents--columns .column2 .kitbit {
-        display: flex;
-        height: 10vh; }
+        background-color: #fff; }
+        .contents--container .contents .contents--columns .column2 .kitbit .kitbit--close-btn {
+          display: flex;
+          margin-left: auto; }
+          .contents--container .contents .contents--columns .column2 .kitbit .kitbit--close-btn svg:hover .closebtn-path {
+            fill: black; }
+          .contents--container .contents .contents--columns .column2 .kitbit .kitbit--close-btn svg .closebtn-path {
+            fill: #ADADAD; }
+        .contents--container .contents .contents--columns .column2 .kitbit .title {
+          color: color-grey-text;
+          font-style: normal;
+          font-size: 0.9em; }

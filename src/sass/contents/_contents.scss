@@ -1,5 +1,5 @@
-$row:10vh; //row height
-
+$row:5vh; //row height
+		
 .contents { 
 	display: flex;
 	flex-wrap: wrap;
@@ -20,8 +20,11 @@ $row:10vh; //row height
 		justify-content: center;
 		align-items: center;
 		padding: $v-p-spacer;
+
+
 		.welcome--logo {
 			transform: scale(.7);
+			margin-left: auto;
 		}
 
 		.welcome--msg {
@@ -57,13 +60,19 @@ $row:10vh; //row height
 		}
 
 		.welcome--close-btn {
-			flex-direction: column;
-    		margin-top: 30px;
-    		padding: 15px 0;
-    		position: relative;
-    		text-align: center;
-			.svg {
-				color: $color-grey;
+    		display: block;
+    		margin-left: auto;
+			padding-right: $h-m-spacer;
+			padding-bottom: $h-p-spacer;
+			svg {
+				&:hover {
+					.closebtn-path {
+						fill:black;
+					}
+				}
+				.closebtn-path{
+					fill: $color-grey-text;
+				 }
 			}
 		}
 	}
@@ -72,12 +81,12 @@ $row:10vh; //row height
 		display: flex;
 		margin-top: $v-m-spacer;
 		// flex-direction: column;
-		width:100%;
+		width:80%;
 		justify-content: flex-start;
 		align-items: center;
 		flex-grow: 1;
-		@import "column1";
-		@import "column2";
+		@import "./columns/column1";
+		@import "./columns/column2";
 	}
 
 }
