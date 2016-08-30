@@ -29,20 +29,23 @@ body {
         display: inline-flex;
         flex-grow: 1;
         transform: scale(0.7); }
-      .header .header-inner .headertop .header--search-box {
+      .header .header-inner .headertop .header--search {
         display: flex;
         flex-grow: 100;
-        padding: 6px;
+        align-items: center;
         border: solid 1px #DDD; }
-        .header .header-inner .headertop .header--search-box .header--search-icon {
-          margin: 10px; }
-        .header .header-inner .headertop .header--search-box #header--input-search {
-          margin-left: 8px;
+        .header .header-inner .headertop .header--search .header--search-icon {
+          margin-left: 0.4vw;
+          padding-top: 1vh;
+          transform: scale(0.8); }
+        .header .header-inner .headertop .header--search #header--search-inp {
+          margin-left: h-m-spacer;
+          padding: 1vh;
           width: 100%;
           border-style: none;
-          color: #ADADAD;
+          color: color-grey-text;
           font-style: normal;
-          font-size: 0.65em; }
+          font-size: 0.8em; }
       .header .header-inner .headertop .header--dd-menu-main-btn {
         display: flex;
         flex-grow: 1;
@@ -52,10 +55,10 @@ body {
       .header .header-inner .headertop .header--btn-login {
         display: flex;
         flex-grow: 1;
-        margin-left: 6px;
-        color: #ADADAD;
+        margin-left: 0.4vw;
+        color: color-grey-text;
         font-style: normal;
-        font-size: 0.65em; }
+        font-size: 0.8em; }
     .header .header-inner .headerbttm {
       display: flex;
       justify-content: center;
@@ -67,28 +70,30 @@ body {
         .header .header-inner .headerbttm .header--mainnav .main-nav-btns {
           display: flex;
           flex-grow: 1;
-          min-height: 5vh; }
+          min-height: 6vh; }
           .header .header-inner .headerbttm .header--mainnav .main-nav-btns .nav-btn {
             display: flex;
             align-items: center;
             justify-content: center;
-            min-width: 10vw;
+            min-width: 5vw;
             height: 100%;
-            color: #ADADAD;
+            color: color-grey-text;
             font-style: normal;
             font-size: 0.9em; }
-          .header .header-inner .headerbttm .header--mainnav .main-nav-btns .nav-btn:hover {
-            background: #F9F9F9; }
-          .header .header-inner .headerbttm .header--mainnav .main-nav-btns .nav-btn1 {
-            padding-right: 6px; }
+            .header .header-inner .headerbttm .header--mainnav .main-nav-btns .nav-btn:hover {
+              background: #F9F9F9; }
+          .header .header-inner .headerbttm .header--mainnav .main-nav-btns .nav-btn-1 {
+            margin-right: 0.4vw;
+            background-color: #F9F9F9;
+            background-clip: content-box; }
 
 .contents--container .contents {
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
-  margin: auto;
-  width: 80%; }
+  align-items: center;
+  justify-content: center; }
   .contents--container .contents .welcome {
     display: flex;
     flex-grow: 1;
@@ -96,46 +101,61 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding-top: 1vh;
-    padding-right: 2vw;
-    padding-bottom: 1vh;
-    padding-left: 2vw;
-    height: 8vh;
+    margin-top: 4vh;
+    padding: 1vh;
+    width: 80%;
     background-color: white; }
-    .contents--container .contents .welcome * {
-      margin-left: 10px; }
     .contents--container .contents .welcome .welcome--logo {
       transform: scale(0.7); }
     .contents--container .contents .welcome .welcome--msg {
+      margin-left: 0.4vw;
       color: black;
       font-style: bold;
-      font-size: 0.7em; }
+      font-size: 0.8em; }
     .contents--container .contents .welcome .welcome--subscribe-msg {
-      color: #ADADAD;
+      margin-left: 0.4vw;
+      color: color-grey-text;
       font-style: normal;
-      font-size: 0.65em; }
-    .contents--container .contents .welcome #welcome--email {
+      font-size: 0.8em; }
+    .contents--container .contents .welcome #welcome--email-inp {
+      margin-left: 0.4vw;
       padding: 5px;
-      color: #ADADAD;
+      border-style: solid;
+      border-color: #F9F9F9;
+      color: color-grey-text;
       font-style: normal;
-      font-size: 0.65em; }
-    .contents--container .contents .welcome #welcome--submit {
-      display: inline-flex;
+      font-size: 0.8em; }
+    .contents--container .contents .welcome #welcome--submit-btn {
+      margin-left: 10px;
       padding: 4px;
-      min-width: 8vw;
-      max-width: 8vw;
       border-style: none;
       border-radius: 4px;
       background: #DA552F;
-      color: white; }
-      .contents--container .contents .welcome #welcome--submit:hover {
+      color: white;
+      color: white;
+      font-style: normal;
+      font-size: 0.8em;
+      cursor: pointer; }
+      .contents--container .contents .welcome #welcome--submit-btn:hover {
         background-color: #DA7937; }
+    .contents--container .contents .welcome .welcome--close-btn {
+      position: relative;
+      flex-direction: column;
+      margin-top: 30px;
+      padding: 15px 0;
+      text-align: center; }
+      .contents--container .contents .welcome .welcome--close-btn .svg {
+        color: #DDD; }
   .contents--container .contents .contents--columns {
     display: flex;
-    justify-content: space-between; }
+    flex-grow: 1;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 4vh;
+    width: 100%; }
     .contents--container .contents .contents--columns .column1 {
       display: flex;
-      flex-grow: 2;
+      flex-grow: 3;
       margin-right: 1vw;
       height: 10vh; }
     .contents--container .contents .contents--columns .column2 {

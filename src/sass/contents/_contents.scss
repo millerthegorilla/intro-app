@@ -4,63 +4,78 @@ $row:10vh; //row height
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
 	flex-direction: column;
-	margin: auto;
-	width: 80%;
+	// margin: auto;
+	// width: 80%;
 	.welcome { 
 		display: flex;
+		margin-top: $v-m-spacer;
 		flex-basis: 100%;
+		width: 80%;
 		background-color: white;
 		flex-grow: 1;
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
-		height: 8vh;
-		padding-left: 2vw;
-		padding-right: 2vw;
-		padding-top: 1vh;
-		padding-bottom: 1vh;
-
-		*{
-			margin-left: 10px;
-		}
-
+		padding: $v-p-spacer;
 		.welcome--logo {
 			transform: scale(.7);
 		}
 
 		.welcome--msg {
 			@include font-std-strong($fs-normal);
+			margin-left: $h-m-spacer;
 		}
 
 		.welcome--subscribe-msg { 
 			@include font-std-normal($fs-small);
+			margin-left: $h-m-spacer;
 		}
 
-		#welcome--email {
-			padding: 5px;
+		#welcome--email-inp {
 			@include font-std-normal($fs-small);
+			padding: 5px;
+			margin-left: $h-m-spacer;
+			border-style: solid;
+			border-color: $color-bgd;
 		}
 
-		#welcome--submit {
-			display: inline-flex;
+		#welcome--submit-btn {
 			background: $color-submit;
-			min-width: 8vw;
-			max-width: 8vw;
+			@include font-std-normal($fs-normal, white)
 			padding: 4px;
+			margin-left: 10px;
 			border-style: none;
 			border-radius: 4px;
 			color: white;
+			cursor: pointer;
 			&:hover {
 				background-color: $color-submit-hover;
 			}
+		}
 
-		} 
+		.welcome--close-btn {
+			flex-direction: column;
+    		margin-top: 30px;
+    		padding: 15px 0;
+    		position: relative;
+    		text-align: center;
+			.svg {
+				color: $color-grey;
+			}
+		}
 	}
 	
 	.contents--columns {
 		display: flex;
-		justify-content: space-between;
+		margin-top: $v-m-spacer;
+		// flex-direction: column;
+		width:100%;
+		justify-content: flex-start;
+		align-items: center;
+		flex-grow: 1;
 		@import "column1";
 		@import "column2";
 	}

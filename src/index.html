@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="css/stylesheet.css">
 	<link rel="shortcut icon" type="image/x-icon" href="https://assets.producthunt.com/assets/favicon-9247d7de492fd8ec2553739d3635dca4.ico">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/core.js"></script>
+	<script src="scripts/svg.js"></script>
 </head>
 <body>
 <div class="body-contents">
@@ -14,16 +16,16 @@
 	<div class="header-inner">
 	<div class="headertop">
 		<div class="logo">
-			<span class="logoIcon_1Mp0b"><svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M40 20c0 11.046-8.954 20-20 20S0 31.046 0 20 8.954 0 20 0s20 8.954 20 20" fill="#DA552F"></path><path d="M22.667 20H17v-6h5.667c1.656 0 3 1.343 3 3s-1.344 3-3 3m0-10H13v20h4v-6h5.667c3.866 0 7-3.134 7-7s-3.134-7-7-7" fill="#FFF"></path></g></svg>
+			<span class="svg logoicon"><svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M40 20c0 11.046-8.954 20-20 20S0 31.046 0 20 8.954 0 20 0s20 8.954 20 20" fill="#DA552F"></path><path d="M22.667 20H17v-6h5.667c1.656 0 3 1.343 3 3s-1.344 3-3 3m0-10H13v20h4v-6h5.667c3.866 0 7-3.134 7-7s-3.134-7-7-7" fill="#FFF"></path></g></svg>
 			</span>
 		</div>
-		<div class="header--search-box">
-			<icon class="header--search-icon">
+		<div class="header--search">
+			<div class="svg header--search-icon">
 				<svg width="18" height="18" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg"><title>Oval 95</title><path d="M9.383 10.347c-.987.78-2.233 1.244-3.588 1.244C2.595 11.59 0 8.997 0 5.796 0 2.595 2.595 0 5.795 0c3.2 0 5.796 2.595 5.796 5.795 0 1.355-.464 2.6-1.243 3.588L15 14.036l-.964.964-4.653-4.653zm-3.588-.12c2.448 0 4.432-1.984 4.432-4.432 0-2.447-1.984-4.43-4.432-4.43-2.447 0-4.43 1.983-4.43 4.43 0 2.448 1.983 4.432 4.43 4.432z" fill="#BBB" fill-rule="evenodd"></path></svg>
-			</icon>
-			<input type="search" name="header--input-search" id="header--input-search" placeholder="Discover your next favourite thing...">
+			</div>
+			<input type="search" name="header--search-inp" id="header--search-inp" placeholder="Discover your next favourite thing...">
 		</div>
-		<span class="header--dd-menu-main-btn"><svg width="20" height="4" viewBox="0 0 20 4" xmlns="http://www.w3.org/2000/svg"><path d="M2 4c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm8 0c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm8 0c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z" fill="#BBB" fill-rule="evenodd"></path></svg></span>
+		<span class="svg header--dd-menu-main-btn"><svg width="20" height="4" viewBox="0 0 20 4" xmlns="http://www.w3.org/2000/svg"><path d="M2 4c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm8 0c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm8 0c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z" fill="#BBB" fill-rule="evenodd"></path></svg></span>
 		<nav class="header--dd-menu">
 			<ul class="dd-btns">
 				<li class="dd-menu-btn-1"><a href="#" class="btn-link">Home</a></li>
@@ -52,8 +54,9 @@
 			</span>
 			<span class="welcome--msg">Welcome to Product Hunt</span><span class="welcome--subscribe-msg">
 	Get the best new products in your inbox, daily.</span>
-			<input type="email" name="" id="welcome--email-address" placeholder="Your email">
-			<input type="submit" value="" id="welcome--submit" value="SUBSCRIBE">
+			<input type="email" name="" id="welcome--email-inp" placeholder="Your email">
+			<input type="submit" value="" id="welcome--submit-btn" value="SUBSCRIBE">
+			<img class="svg welcome--close-btn"><svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><path d="M6 4.586l4.24-4.24c.395-.395 1.026-.392 1.416-.002.393.393.39 1.024 0 1.415L7.413 6l4.24 4.24c.395.395.392 1.026.002 1.416-.393.393-1.024.39-1.415 0L6 7.413l-4.24 4.24c-.395.395-1.026.392-1.416.002-.393-.393-.39-1.024 0-1.415L4.587 6 .347 1.76C-.05 1.364-.048.733.342.343c.393-.393 1.024-.39 1.415 0L6 4.587z" fill-rule="evenodd"></path></svg></img>
 		</section>
 		<div class="contents--columns">
 			<div class="column1">

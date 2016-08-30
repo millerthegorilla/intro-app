@@ -4,6 +4,7 @@ $color-bgd: #F9F9F9;
 $color-submit: #DA552F;
 $color-submit-hover: #DA7937;
 $color-grey-text: #ADADAD;
+$color-grey: #DDD;
 
 // font-families
 
@@ -12,26 +13,30 @@ $base-font: 'Montserrat', sans-serif;
 // font-sizes
 
 $fs-large: .9em;
-$fs-normal: .7em;
-$fs-small: .65em;
+$fs-normal: .8em;
+$fs-small: .8em;
 
 // font-styles
 
-@mixin font-std-strong($fontsize) {
-	font-size: $fontsize;
+@mixin font-std-strong($fontsize, $color:black) {
+	font-size: #{$fontsize};
 	font-style: bold;
-	color: black;
+	color: #{$color};
 }
 
-@mixin font-std-normal($fontsize) {
-	font-size: $fontsize;
+@mixin font-std-normal($fontsize, $color:color-grey-text ) {
+	font-size: #{$fontsize};
 	font-style: normal;
-	color: $color-grey-text;
+	color: #{$color};
 }
 
 // misc variables
 
-$h-spacer: 6px;
+$h-p-spacer: 1vw;
+$h-m-spacer: .4vw;
+
+$v-m-spacer: 4vh;
+$v-p-spacer: 1vh;
 
 * {
 	list-style-type: none;
@@ -52,11 +57,11 @@ body {
 
 // imports
 
-@import "header";
+@import "./header/header";
 
 .contents--container{
 	// display: flex;
 	// justify-content: center;
 	// width: 80%;
-	@import "contents";
+	@import "./contents/contents";
 }

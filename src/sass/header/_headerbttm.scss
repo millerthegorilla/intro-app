@@ -6,39 +6,39 @@
 	.header--mainnav { 
 		display: flex;
 		flex-grow: 1;
-		// margin-left: 5vw;
-		// margin-right: 2vw;
-		border-top: solid 1px #DDD;
+		border-top: solid 1px #{$color-grey};
 
 		.main-nav-btns {
 			display: flex;
 			// justify-content: flex-start;
 			// align-items: center;
 			flex-grow: 1;
-			min-height: 5vh;
+			min-height: 6vh;
 			
 			.nav-btn {
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				min-width: 10vw;
+				min-width: 5vw;
 				height:100%;
 				@include font-std-normal($fs-large);
+				&:hover {
+					background: $color-bgd;
+				}
 			}
 
-			.nav-btn:hover {
-				background: $color-bgd;
+			.nav-btn-1 {
+				background-clip: content-box;
+				margin-right: $h-m-spacer;
+				background-color: $color-bgd;
+				
 			}
 
-			.nav-btn1 { 
-				padding-right: $h-spacer;
-			}
-
-			.nav-btn2 { 
+			.nav-btn-2 { 
 
 			}
 
-			.nav-btn3 { 
+			.nav-btn-3 { 
 
 			}
 		}
